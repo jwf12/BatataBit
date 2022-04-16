@@ -1,0 +1,940 @@
+:root {
+   /* Colores*/
+    --bitcoin-orange:#F7931A;
+    --soft-orange:#FFE9D5;
+    --secondary-blue:#1A9AF7;
+    --soft-blue:#E7F5FF;
+    --warm-black:#201E1C;
+    --black: #282623;
+    --grey: #BABABA;
+    --off-white:#FAF8F7;
+    --white: #fff;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+header img{
+     width: 150px;
+     height: 24px;
+     align-self: center; 
+     margin-top: 60px; 
+}
+.header--title--container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+.header--title--container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--white);
+}
+.header--title--container p{
+    margin-top:  25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+.header--button{
+    position: absolute;
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.30);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+    align-items: center;
+}
+.header--button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url(./assets/Icon/flecha-abajo-negra.svg);
+}
+.main--exchange-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 1250px;
+    text-align: center;
+    background-color: var(--off-white);
+    z-index: -1;
+    align-items: center;
+}
+.main--exchange--container--img{
+    position: relative;
+    left: 5px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -305px;
+}
+.main--exchange-container--text{
+    position: relative;
+    width: 90%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -235px;
+    margin-bottom: 40px;
+}
+.main--exchange-container--text h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    margin-bottom: 30px;
+}
+.main--exchange-container--text p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+.main--tables{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: 
+    "Inter", "sans-serif";
+}
+.main--tables .main--tables-title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color:  var(--bitcoin-orange);
+    justify-content: flex-start;
+    display: flex;
+    padding-left: 15px;
+}
+.currency--table{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+.currency--table table{
+    width: 100%;
+    height: 100%;
+}
+.currency--table td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--white);
+    text-align:start;
+    padding-left: 10px;
+}
+.currency--table .table-top-left{
+    border-top-left-radius: 10px
+}
+.currency--table .table-top-right{
+    border-top-right-radius: 10px;
+}
+.currency--table .table-bottom-left{
+    border-bottom-left-radius: 10px;
+}
+.currency--table .table-bottom-right{
+    border-bottom-right-radius: 10px;
+}
+.currency--table .table-right{
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.currency--table .down{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url(./assets/Icon/trending-down.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.currency--table .up{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 17px;
+    background-image: url(./assets/Icon/trending-up.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main--tables .currency--table-pie{
+    display: inline-block;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.main--tables .currency--table-pie p{
+    background-color: var(--soft-orange);
+    border-radius: 10px;
+    height: 25px;
+    padding-top: 5px;
+    font-family: "Inter", "sans serif";
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: normal;
+    color: var(--warm-black);
+}
+.secondary--tables{
+  
+        width: 70%;
+        min-width: 235px;
+        max-width: 500px;
+        height: 360px;
+        margin: 0 auto;
+        font-family: 
+        "Inter", "sans-serif";
+        
+}
+.secondary--tables-title{   
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-blue);
+    justify-content: flex-start;
+    display: flex;
+    padding-left: 15px;
+    padding-top: 50px;
+}
+.commission--table{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+.commission--table table{
+    width: 100%;
+    height: 100%;
+}
+.commission--table td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--white);
+    text-align:start;
+    padding-left: 10px;
+    
+}
+.commission--table .table-top-left{
+    border-top-left-radius: 10px
+}
+.commission--table .table-top-right{
+    border-top-right-radius: 10px;
+}
+.commission--table .table-bottom-left{
+    border-bottom-left-radius: 10px;
+}
+.commission--table .table-bottom-right{
+    border-bottom-right-radius: 10px;
+}
+.secondary--tables .secondary--table-pie{
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.secondary--tables .secondary--table-pie p{
+    background-color: var(--soft-blue);
+    border-radius: 10px;
+    height: 25px;
+    padding-top: 5px;
+    font-family: "Inter", "sans serif";
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: normal;
+    color: var(--warm-black);
+}
+.main--beneficios-container{
+    position: relative;
+    
+    width: 100%;
+    min-width: 320px;
+    height: 910px;
+    text-align: center;
+    background-color: var(--warm-black);
+    padding: 55px 10px;
+}
+.beneficios--papa{
+    background-image: url(./assets/Images/papacrocante.svg);
+    position: absolute;
+    width: 41px;
+    height: 24px;
+    top: -10px;
+    left: 47%;
+}
+.main--beneficios-container .beneficio--encabezado{
+    width: 90%;
+    margin: 0 auto;
+    top: 30px;
+}
+.beneficio--encabezado h2{
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    padding-bottom: 25px;
+}
+.beneficio--encabezado p{
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+    padding-bottom: 15px;
+}
+.beneficio--tiempo{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 152px;
+    margin: 15px auto;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 
+    0, 0, 0.30);
+}
+.beneficio--tiempo span{
+    position:relative;
+    display:flex;
+    width: 22px;
+    height: 22px;
+    background-image: url(./assets/Icon/clock1.svg);
+    margin: 5px;
+    top: 15px;
+    left: 15px;
+    background-image: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+.beneficio--tiempo h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: var(--white);
+    display: flex;
+    
+    margin:15px 0 10px 20px;
+    padding-top: 10px;
+}
+.beneficio--tiempo p{
+    position: relative;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+    text-align: start;
+    margin-left: 20px;
+    width: 90%;
+}
+.beneficio--tasas{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 152px;
+    margin: 15px auto;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 
+    0, 0, 0.30);
+}
+.beneficio--tasas span{
+    position:relative;
+    display:flex;
+    width: 23px;
+    height: 22px;
+    background-image: url(./assets/Icon/eye.svg);
+    margin: 5px;
+    top: 15px;
+    left: 15px;
+    background-image: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+.beneficio--tasas h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: var(--white);
+    display: flex;
+    
+    margin:15px 0 10px 20px;
+    padding-top: 10px;
+}
+.beneficio--tasas p{
+    position: relative;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+    text-align: start;
+    margin-left: 20px;
+    width: 90%;
+}
+.beneficio--compara{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 152px;
+    margin: 15px auto;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 
+    0, 0, 0.30);
+}
+.beneficio--compara span{
+    position:relative;
+    display:flex;
+    width: 22px;
+    height: 22px;
+    background-image: url(./assets/Icon/dollar-sign.svg);
+    margin: 5px;
+    top: 15px;
+    left: 15px;
+    background-image: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+.beneficio--compara h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: var(--white);
+    display: flex;
+    
+    margin:15px 0 10px 20px;
+    padding-top: 10px;
+}
+.beneficio--compara p{
+    position: relative;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+    text-align: start;
+    margin-left: 20px;
+    width: 90%;
+}
+.beneficio--info{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 152px;
+    margin: 15px auto;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 
+    0, 0, 0.30);
+}
+.beneficio--info span{
+    position:relative;
+    display:flex;
+    width: 22px;
+    height: 22px;
+    background-image: url(./assets/Icon/check-circle.svg);
+    margin: 5px;
+    top: 15px;
+    left: 15px;
+    background-image: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+.beneficio--info h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: var(--white);
+    display: flex;
+    
+    margin:15px 0 10px 20px;
+    padding-top: 10px;
+}
+.beneficio--info p{
+    position: relative;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+    text-align: start;
+    margin-left: 20px;
+    width: 90%;
+}
+.know{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+
+    margin: 0 auto;
+    height: 387px;
+    text-align: center;
+    padding: 55px 10px;
+    background-image: url(./assets/Images/bitcoinbaby.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.know--hoy{
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    color: #fff;
+    margin: 5px;
+}
+.plan--main{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: 550px;
+    background-color: var(--off-white);
+    text-align: center;
+}
+.plan--main h2{
+    position: relative;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color:var(--warm-black);
+    top: 65px;
+    width: 90%;
+    margin: 0 auto;
+}
+.plan--main p{
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #757575 ;
+    top: 95px;
+    width: 95%;
+    margin: 0 auto;
+}
+.plan--square{
+    display: flex;
+    top: 153px;
+    position: relative;
+    height: 316px;
+    
+
+    gap: 55px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    
+}
+
+
+.square-1{
+    position: relative;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    min-width: 230px;
+    height: 250px;
+    background-color: var(--white);
+    border-radius: 5px;  
+    align-items: center; 
+    top: 10px; 
+}
+.square-1 .square-1-top{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 5px;
+    top: -10px;
+    left: 65px;
+}
+.square-1-top p{
+    font-family: "Inter";
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--off-white);
+}
+.square-1 .square--1-pago{
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: black;
+    margin:35px 5px 5px 5px;
+    top: 0px;
+}
+.square-1 .square--1-valor{
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    letter-spacing: -0.08em;
+    color: black;
+    margin-top: 15px;
+    top: 0px;
+}
+.square-1 .square--1-moneda{
+    position: absolute;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    top: 81px;
+    left: -30px;
+}
+.square-1 .square--1-ahorro{
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    top: 0px;
+    margin-top: 5px;
+}
+.square-1 .square--1-bottom a{
+    position: relative;
+    display: flex;
+    background-color: var(--off-white);
+    width: 151px;
+    height: 48px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    border: 2px solid var(--bitcoin-orange);
+    font-family: "Inter";
+    text-align:start;
+    color: var(--warm-black);
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    vertical-align: text-bottom;
+    font-style: none;
+    top: 10px;
+}
+.square-1 span{
+    background-image: url(./assets/Icon/arrow-rightamarilla.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 9px;
+    right: 15px;
+    vertical-align: text-bottom;
+    z-index: 3;
+}
+
+
+
+
+
+.square-main{
+    position: relative;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    background-color: var(--secondary-blue);
+    border-radius: 5px;
+    margin: 0px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 
+        0, 0, 0.30);
+        align-items: center;
+        justify-content: center;
+        top: 10px;
+}
+.square-main .pago1{
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: black;
+    margin-bottom: 15px;
+    top: 0px;
+}
+.square-main .pago2{
+    font-family: "Inter";
+    font-weight: 700;
+font-size: 5.2rem;
+line-height: 6.3rem;
+letter-spacing: -0.08em;
+color: black;
+margin-bottom: 15px;
+top: 0px;
+}
+.square-main .pago3{
+    font-family: "Inter";
+    font-weight: 500;
+font-size: 1.2rem;
+line-height: 1.5rem;
+text-align: center;
+top: -10px;
+color:#201E1C;
+}
+.square-main .pago4{
+    position: absolute;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    top: 72px;
+    left: -30px;
+}
+
+.square-main-top{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 5px;
+    top: -10px;
+}
+.square-main-top p{
+    font-family: "Inter";
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--off-white);
+}
+.square-main-bottom a{
+    position: relative;
+    display: flex;
+    background-color: var(--secondary-blue);
+    width: 151px;
+    height: 48px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    border: 2px solid var(--bitcoin-orange);
+    font-family: "Inter";
+    text-align:start;
+    color: var(--warm-black);
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    vertical-align: text-bottom;
+    z-index: 3;
+
+}
+
+
+.square-2{
+    position: relative;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    min-width: 230px;
+    height: 250px;
+    background-color: var(--warm-black);
+    border-radius: 5px;  
+    align-items: center; 
+    top:10px;
+
+}
+.square-2 .square-2-top{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 5px;
+    top: -10px;
+    left: 65px;
+}
+.square-2-top p{
+    font-family: "Inter";
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--off-white);
+}
+.square-2 .square--2-pago{
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: grey;
+    margin:35px 5px 5px 5px;
+    top: 0px;
+}
+.square-2 .square--2-valor{
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    letter-spacing: -0.08em;
+    color: gray;
+    margin-top: 15px;
+    top: 0px;
+}
+.square-2 .square--2-moneda{
+    position: absolute;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    top: 81px;
+    left: -44px;
+
+
+}
+.square-2 .square--2-ahorro{
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    top: 0px;
+    margin-top: 5px;
+
+}
+.square-2 .square--2-bottom a{
+    position: relative;
+    display: flex;
+    background-color: var(--warm-black);
+    width: 151px;
+    height: 48px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    border: 2px solid var(--bitcoin-orange);
+    font-family: "Inter";
+    text-align:start;
+    color: var(--warm-black);
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    vertical-align: text-bottom;
+    font-style: none;
+    top: 10px;
+    color: #757575;
+}
+.square-2 span{
+    background-image: url(./assets/Icon/arrow-rightamarilla.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 9px;
+    right: 15px;
+    vertical-align: text-bottom;
+    z-index: 3;
+}
+
+
+.bottom-arrow{
+    background-image: url(./assets/Icon/arrow-rightamarilla.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 9px;
+    right: 15px;
+    vertical-align: text-bottom;
+}
+footer{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer div{
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}    
+    footer a{
+    text-decoration: none;
+    list-style: none;
+}
+footer picture{
+    width: 64px;
+    height: 55px;
+    position: relative;
+   
+}
